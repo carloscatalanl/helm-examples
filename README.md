@@ -96,5 +96,5 @@ mv <package> charts
 
 Create a Repo index:
 ```ssh
-helm repo index
+helm repo index .
 ```
