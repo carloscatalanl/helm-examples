@@ -3,10 +3,10 @@ entries:
   testchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-12T09:46:26.609614-07:00"
+    created: "2022-04-12T10:06:25.359401-07:00"
     description: A Helm chart for Kubernetes
     digest: c8f6e57f3f1c3cca74338d23f27fbd7801698755a6f1396f6c24bbe99ea9dd9a
-    name: testchart-nginx-3-pod
+    name: testchart
     type: application
     urls:
     - charts/testchart-0.1.0.tgz
@@ -14,12 +14,22 @@ entries:
   testchart-apache:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-12T09:46:26.611803-07:00"
+    created: "2022-04-12T10:06:25.362568-07:00"
+    description: A Helm chart for Kubernetes techM with Apache Fix
+    digest: 534a6e1b1cdf199da7602a215e34d3b20315cc2b0258f05a14c4605c6096ac65
+    name: testchart-apache
+    type: application
+    urls:
+    - charts/testchart-apache-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-04-12T10:06:25.361315-07:00"
     description: A Helm chart for Kubernetes techM with Apache
     digest: 0ed0e5a1fb058971b96d24222c70b09a29a88244d50293a043bd44985d344870
-    name: testchart-apache-10-pod
+    name: testchart-apache
     type: application
     urls:
     - charts/testchart-apache-0.1.1.tgz
     version: 0.1.1
-generated: "2022-04-12T09:46:26.609032-07:00"
+generated: "2022-04-12T10:06:25.35838-07:00"
