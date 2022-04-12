@@ -19,7 +19,7 @@ Add repo:
 helm repo add <repo-name> <repo-url>
 ```
 
-Check my repos:
+Check repo charts:
 ```ssh
 helm search repo <repo-name>
 ```
