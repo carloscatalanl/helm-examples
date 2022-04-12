@@ -89,11 +89,6 @@ Package a helm chart:
 helm package .
 ```
 
-Move package to charts dic:
-```ssh
-mv <package> charts
-```
-
 Create a Repo index:
 ```ssh
 helm repo index .
