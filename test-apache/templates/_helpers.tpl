@@ -1,7 +1,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "testchart.name" -}}
+{{- define "test-apache.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
@@ -10,7 +10,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "testchart.fullname" -}}
+{{- define "test-apache.fullname" -}}
 {{- if .Values.fullnameOverride }}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
 {{- else }}
@@ -26,16 +26,16 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "testchart.chart" -}}
+{{- define "test-apache.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Common labels
 */}}
-{{- define "testchart.labels" -}}
-helm.sh/chart: {{ include "testchart.chart" . }}
-{{ include "testchart.selectorLabels" . }}
+{{- define "test-apache.labels" -}}
+helm.sh/chart: {{ include "test-apache.chart" . }}
+{{ include "test-apache.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -45,17 +45,17 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "testchart.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "testchart.name" . }}
+{{- define "test-apache.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "test-apache.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "testchart.serviceAccountName" -}}
+{{- define "test-apache.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create }}
-{{- default (include "testchart.fullname" .) .Values.serviceAccount.name }}
+{{- default (include "test-apache.fullname" .) .Values.serviceAccount.name }}
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}

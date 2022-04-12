@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "testchart.fullname" . }}
+  name: {{ include "test-apache.fullname" . }}
   labels:
-    {{- include "testchart.labels" . | nindent 4 }}
+    {{- include "test-apache.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "testchart.selectorLabels" . | nindent 4 }}
+    {{- include "test-apache.selectorLabels" . | nindent 4 }}

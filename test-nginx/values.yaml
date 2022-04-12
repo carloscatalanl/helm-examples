@@ -1,8 +1,8 @@
-# Default values for testchart.
+# Default values for test-nginx.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 10
+replicaCount: 3
 
 image:
   repository: nginx
