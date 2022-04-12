@@ -78,3 +78,23 @@ Show chart history:
 ```ssh
 helm -n <namespace>  history <chart-name>
 ```
+
+Create a Helm Chart:
+```ssh
+helm create <helm-chart-name>
+```
+
+Package a helm chart:
+```ssh
+helm package .
+```
+
+Move package to charts dic:
+```ssh
+mv <package> charts
+```
+
+Create a Repo index:
+```ssh
+helm repo index
+```
