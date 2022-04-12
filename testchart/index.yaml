@@ -3,7 +3,7 @@ entries:
   testchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-12T10:27:18.721958-07:00"
+    created: "2022-04-12T10:31:19.934357-07:00"
     description: A Helm chart for Kubernetes
     digest: c8f6e57f3f1c3cca74338d23f27fbd7801698755a6f1396f6c24bbe99ea9dd9a
     name: testchart
@@ -13,8 +13,18 @@ entries:
     version: 0.1.0
   testchart-apache:
   - apiVersion: v2
+    appVersion: 1.16.1
+    created: "2022-04-12T10:31:19.953683-07:00"
+    description: A Helm chart for Kubernetes techM with Apache Fix
+    digest: b211580ba778f65b9cc84cc5e8a892a950a8dc5cbffd2d9b5db5f78c49c84e06
+    name: testchart-apache
+    type: application
+    urls:
+    - charts/testchart-apache-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-12T10:27:18.732717-07:00"
+    created: "2022-04-12T10:31:19.944821-07:00"
     description: A Helm chart for Kubernetes techM with Apache Fix
     digest: c555f8b3541453806adb1784dcb6c20069301f5f14e6d0bf3980478d8db3fe00
     name: testchart-apache
@@ -24,7 +34,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-12T10:27:18.727195-07:00"
+    created: "2022-04-12T10:31:19.939548-07:00"
     description: A Helm chart for Kubernetes techM with Apache Fix
     digest: d39a73476a5c421e84b3d1dc844441005ec203ab5955899787b62bcf3a43ecb6
     name: testchart-apache
@@ -34,7 +44,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-12T10:27:18.725087-07:00"
+    created: "2022-04-12T10:31:19.937581-07:00"
     description: A Helm chart for Kubernetes techM with Apache Fix
     digest: 534a6e1b1cdf199da7602a215e34d3b20315cc2b0258f05a14c4605c6096ac65
     name: testchart-apache
@@ -44,7 +54,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-12T10:27:18.723536-07:00"
+    created: "2022-04-12T10:31:19.936045-07:00"
     description: A Helm chart for Kubernetes techM with Apache
     digest: 0ed0e5a1fb058971b96d24222c70b09a29a88244d50293a043bd44985d344870
     name: testchart-apache
@@ -52,4 +62,4 @@ entries:
     urls:
     - charts/testchart-apache-0.1.1.tgz
     version: 0.1.1
-generated: "2022-04-12T10:27:18.721335-07:00"
+generated: "2022-04-12T10:31:19.933555-07:00"
